@@ -1,13 +1,17 @@
 import React from 'react'
 import styles from "./Message.module.css"
-import {messageData} from "./HW1";
 
-type messageDataType = typeof messageData
+export type MessageDataType = {
+    avatar: string
+    name: string
+    message: string
+    time: string
+}
 
-const Message = ({avatar, name, message, time}: messageDataType) => {
+const Message = ({avatar, name, message, time}: MessageDataType) => {
 
     return (
-        <div>
+        <div className={styles.name}>
             <div className={styles.messageInstance}>
                 <div>
                     <img className={styles.img} src={avatar}/>
@@ -24,10 +28,7 @@ const Message = ({avatar, name, message, time}: messageDataType) => {
                     </div>
                 </div>
             </div>
-            {/*<div>*/}
-            {/*    <textarea></textarea>*/}
-            {/*    <button>send</button>*/}
-            {/*</div>*/}
+
         </div>
     )
 }
