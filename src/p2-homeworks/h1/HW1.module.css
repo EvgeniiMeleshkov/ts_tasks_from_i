@@ -1,0 +1,5 @@
+.text_buttonDIV {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,6 +1,10 @@
-.name {
-    padding: 10px;
+.messageInstance{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
 }
+
 .messageText {
     opacity: 50%;
     margin-left: 1rem;
@@ -23,11 +27,7 @@
     box-shadow: 20px 0 0 0 rgb(0,36,13);
 }
 
-.messageInstance{
 
-    display: flex;
-    align-items: flex-end;
-}
 .userName {
     color: aliceblue;
     display: flex;
@@ -41,6 +41,7 @@
     padding: 5px 10px 5px 20px;
 }
 .userMessageTime {
+    font-size: 10px;
     color: chartreuse;
     text-align: end;
     padding-bottom: 0.2rem;

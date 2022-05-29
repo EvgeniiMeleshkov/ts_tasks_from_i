@@ -11,7 +11,7 @@ export type MessageDataType = {
 const Message = ({avatar, name, message, time}: MessageDataType) => {
 
     return (
-        <div className={styles.name}>
+        <div >
             <div className={styles.messageInstance}>
                 <div>
                     <img className={styles.img} src={avatar}/>
