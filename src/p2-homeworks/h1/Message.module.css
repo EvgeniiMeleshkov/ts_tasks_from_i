@@ -12,7 +12,7 @@
     background-color: rgb(0,36,13);
     color: antiquewhite;
     min-width: 100px;
-    width: max-content;
+    max-width: border-box;
     max-width: 400px;
     border-radius: 10px 10px 10px 0;
 }
