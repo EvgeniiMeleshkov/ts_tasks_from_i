@@ -1,7 +1,33 @@
-.someClass {
+.mainDiv {
+    text-align: center;
+}
+.errorButton {
+    border: crimson 1px solid;
+    border-radius: 0 20px 20px 0;
+}
+.normButton {
+    border: #007344 1px solid;
+    border-radius: 0 20px 20px 0;
+}
 
+.someClass {
+    border-radius: 20px 0 0 20px;
+    padding-left: 1rem;
+    border: #007344 1px solid;
 }
 
 .error {
-    border: 1px solid red;
+    border: 1px solid crimson;
+    border-radius: 20px 0 0 20px;
+    padding-left: 1rem;
+}
+.errorText {
+    color: crimson;
+    text-shadow: crimson;
+}
+
+.totalUsersSpan {
+    margin: 1rem;
+    font-weight: bold;
+    color: gray(42);
 }
