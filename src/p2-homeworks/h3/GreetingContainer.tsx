@@ -20,14 +20,14 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
         let eventValue = e.currentTarget.value
         setName(eventValue)
-        if (eventValue.match(/^\w{3}([^0-9]*)$/gmi)) {
+        if (eventValue.length > 3 && eventValue.match(/^([^0-9]*)$/gmi)) {
             setName(eventValue)
             setError('')
         } else if (eventValue === '') {
             setError('Enter your name')
         } else if (eventValue.match(/\d+/gi)) {
             setError('Print only letters')
-        } else if (eventValue.length < 3 || eventValue.match(/\d+/gi)) {
+        } else if (eventValue.length < 3) {
             setError('Name should be at list 3 letters long')
         }
     }
