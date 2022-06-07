@@ -20,7 +20,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
         let eventValue = e.currentTarget.value
         setName(eventValue)
-        if (eventValue.match(/(^\D\w\D+)$/gi)) {
+        if (eventValue.match(/^\w{3}([^0-9]*)$/gmi)) {
             setName(eventValue)
             setError('')
         } else if (eventValue === '') {
