@@ -37,6 +37,7 @@ const HW1 = () => {
                 time: new Date().toLocaleTimeString()
             }
         ])
+        setValue('')
     }
     return (
         <div>
