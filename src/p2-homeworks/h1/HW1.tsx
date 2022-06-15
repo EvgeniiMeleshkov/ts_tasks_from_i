@@ -1,6 +1,8 @@
 import React, {ChangeEvent, useState} from 'react'
 import Message, {MessageDataType} from "./Message";
 import styles from './HW1.module.css'
+import SuperButton from '../h4/common/c2-SuperButton/SuperButton';
+import SuperInputText from '../h4/common/c1-SuperInputText/SuperInputText';
 
 const HW1 = () => {
 //-------------------------------------------------------------------------------------
@@ -22,7 +24,7 @@ const HW1 = () => {
         />)
     })
 
-    const onTextChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
+    const onTextChange = (e: ChangeEvent<HTMLInputElement>) => {
         setValue(e.currentTarget.value)
     }
     const onButtonHandler = () => {
@@ -46,10 +48,10 @@ const HW1 = () => {
             {/*should work (должно работать)*/}
             {mappedArr}
             <div className={styles.text_buttonDIV}>
-                <textarea value={value} onChange={onTextChange}></textarea>
+                <SuperInputText onEnter={ value !== '' && value.match(/\w/) ? onButtonHandler : undefined} value={value} onChange={onTextChange}></SuperInputText>
                 {value !== '' && value.match(/\w/)
-                    ? <button onClick={onButtonHandler}>send</button>
-                    : <button disabled={true}>Where is your message?</button>}
+                    ? <SuperButton onClick={onButtonHandler}>send</SuperButton>
+                    : <SuperButton disabled={true}>Where is your message?</SuperButton>}
             </div>
 
             <hr/>
