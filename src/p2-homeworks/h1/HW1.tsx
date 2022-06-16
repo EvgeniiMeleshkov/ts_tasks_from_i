@@ -43,9 +43,7 @@ const HW1 = () => {
         <div>
             <hr/>
             homeworks 1
-            <hr/>
-            Kaway
-            <hr/>
+
             {/*should work (должно работать)*/}
             {mappedArr}
             <div className={styles.text_buttonDIV}>

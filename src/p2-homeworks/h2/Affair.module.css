@@ -1,6 +1,7 @@
 .affairDiv {
-    display: flex;
-    flex-direction: row;
+    margin: 0.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     color: darkslategray;
 }
@@ -11,19 +12,21 @@
 }
 
 .high {
-    align-self: end;
+    justify-self: center;
     font-weight: bolder;
     color: crimson;
 }
 .middle {
-    justify-self: end;
+    justify-self: center;
     font-weight: normal;
     color: goldenrod;
 }
 .low {
-    justify-self: end;
+    justify-self: center;
     font-weight: lighter;
     color: darkslategray;
 }
 .b {
+    justify-self: end;
+
 }
