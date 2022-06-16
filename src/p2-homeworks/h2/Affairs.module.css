@@ -4,5 +4,7 @@
     display: block;
     position: center;
     align-content: space-between;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
