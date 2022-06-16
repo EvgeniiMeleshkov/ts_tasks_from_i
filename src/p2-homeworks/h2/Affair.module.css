@@ -1,0 +1,29 @@
+.affairDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: darkslategray;
+}
+
+.n {
+    font-weight: bold;
+    margin-right: 2rem;
+}
+
+.high {
+    align-self: end;
+    font-weight: bolder;
+    color: crimson;
+}
+.middle {
+    justify-self: end;
+    font-weight: normal;
+    color: goldenrod;
+}
+.low {
+    justify-self: end;
+    font-weight: lighter;
+    color: darkslategray;
+}
+.b {
+}

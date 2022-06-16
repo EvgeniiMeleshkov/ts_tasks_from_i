@@ -1,3 +1,8 @@
-.someClass {
-
+.affairsDiv {
+    max-width: max-content;
+    text-align: center;
+    display: block;
+    position: center;
+    align-content: space-between;
 }
+
