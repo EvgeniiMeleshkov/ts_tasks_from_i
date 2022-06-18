@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ts_tasks_from_i/static/css/main.20f0d74b.css",
+    "main.js": "/ts_tasks_from_i/static/js/main.b3414e82.js",
+    "index.html": "/ts_tasks_from_i/index.html",
+    "main.20f0d74b.css.map": "/ts_tasks_from_i/static/css/main.20f0d74b.css.map",
+    "main.b3414e82.js.map": "/ts_tasks_from_i/static/js/main.b3414e82.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20f0d74b.css",
+    "static/js/main.b3414e82.js"
+  ]
+}
