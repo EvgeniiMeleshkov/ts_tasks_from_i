@@ -48,7 +48,7 @@ const HW1 = () => {
             {mappedArr}
             <div className={styles.text_buttonDIV}>
                 <SuperInputText onEnter={ value !== '' && value.match(/\w/) ? onButtonHandler : undefined} value={value} onChange={onTextChange}></SuperInputText>
-                {value !== '' && value.match(/\w/)
+                {value !== '' && value.match(/\W|\w/)
                     ? <SuperButton onClick={onButtonHandler}>send</SuperButton>
                     : <SuperButton disabled={true}>Where is your message?</SuperButton>}
             </div>

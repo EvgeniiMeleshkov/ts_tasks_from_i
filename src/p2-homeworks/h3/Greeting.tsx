@@ -22,7 +22,7 @@ const Greeting: React.FC<GreetingPropsType> = (
         <div className={s.mainDiv}>
             <SuperInputText error={error} onKeyUp={onEnterPressUpCallBack} value={name} onChange={setNameCallback} className={inputClass}/>
 
-            {error === '' && name.match(/\w/)
+            {error === '' && name.match(/\w|\W/)
                 ? <SuperButton className={buttonClass} onClick={addUser}>add</SuperButton>
                 : <SuperButton className={buttonClass} disabled={true}>Enter valid name</SuperButton>
             }
