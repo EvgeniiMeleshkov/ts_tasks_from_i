@@ -10,14 +10,14 @@ function HW4() {
 
     const showAlert = () => {
         if (error) {
-            alert('введите текст...')
+            console.log(' Enter your text')
         } else {
-            alert(text) // если нет ошибки показать текст
+            alert(text)
         }
     }
 
-    const [checked, setChecked] = useState<boolean>(false)
-    const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
+    const [checked,   setChecked] = useState<boolean>(false)
+    const testOnChange = (e: ChangeEvent<HTMLInputElement>) =>   setChecked(e.currentTarget.checked)
 
     return (
         <div>
