@@ -2,15 +2,16 @@ import React from 'react'
 import {NavLink} from 'react-router-dom';
 import {PATH} from './Pages';
 import s from './Header.module.css'
+import SuperButton from '../h4/common/c2-SuperButton/SuperButton';
 
 function Header() {
     return (
         <div className={s.slide}>
             <div className={s.toggle}>▶︎</div>
             <div className={s.box}>
-                <div className={s.link}><NavLink to={PATH.PRE_JUNIOR}>Pre Junior </NavLink></div>
-                <div className={s.link}><NavLink to={PATH.JUNIOR}>Junior </NavLink></div>
-                <div className={s.link}><NavLink to={PATH.JUNIOR_PLUS}>Junior Plus</NavLink></div>
+                <SuperButton className={s.link}><NavLink to={PATH.PRE_JUNIOR}>Pre Junior </NavLink></SuperButton>
+                <SuperButton className={s.link}><NavLink to={PATH.JUNIOR}>Junior </NavLink></SuperButton>
+                <SuperButton className={s.link}><NavLink to={PATH.JUNIOR_PLUS}>Junior Plus</NavLink></SuperButton>
             </div>
 
         </div>

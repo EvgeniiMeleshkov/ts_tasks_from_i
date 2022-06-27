@@ -1,11 +1,11 @@
 .slide{
-
-    border-radius: 100px;
+    box-shadow:-2px 2px 7px black;
+    border-radius: 10px;
     position: relative;
     background: rgba(85,190,242,0.5);
-    width: 250px;
-    left: -250px;
-    height: 20px;
+    width: 400px;
+    left: -400px;
+    height: 30px;
     transition: left 0.5s ease-in-out;
     -o-transition: left 0.5s ease-in-out;
     -ms-transition: left 0.5s ease-in-out;
@@ -13,27 +13,33 @@
     -webkit-transition: left 0.5s ease-in-out;
 }
 .toggle{
-    font-size: 20px;
+    font-size: 30px;
     color: crimson;
     position: absolute;
-    left: 250px;
+    left: 400px;
     padding-left: 5px;
     background: transparent;
 }
 .box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr  ;
+    gap: 10px 10px;
+    grid-template-areas:
+    ". . .";
 }
 .slide:hover{
     left: 0px;
 }
 .link a {
-    font-weight: bold;
     padding-left: 5px;
     padding-right: 5px;
     text-decoration: none;
     color: #1A1A1A;
+}
+.link a:hover {
+    color: snow;
 }
 .link a:active {
     color: snow;

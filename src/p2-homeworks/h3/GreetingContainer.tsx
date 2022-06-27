@@ -21,7 +21,6 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         let eventValue = e.currentTarget.value
         setName(eventValue)
         if (eventValue.trim().length > 3 && eventValue.trim().match(/^([^0-9]*)$/gmi)) {
-            setName(eventValue)
             setError('')
         } else if (eventValue.trim() === '') {
             setError('Enter your name')
@@ -32,7 +31,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         }
     }
     const onEnterPressUpCallBack = (e: KeyboardEvent<HTMLInputElement>) => {
-        error === '' && name !== '' &&
+        error === '' && name.length > 0 &&
         e.key === 'Enter' && error === '' && addUser()
     }
     const addUser = () => {
