@@ -3,8 +3,8 @@
     border-radius: 10px;
     position: relative;
     background: rgba(85,190,242,0.5);
-    width: 400px;
-    left: -400px;
+    width: 300px;
+    left: -300px;
     height: 30px;
     transition: left 0.5s ease-in-out;
     -o-transition: left 0.5s ease-in-out;
@@ -16,7 +16,7 @@
     font-size: 30px;
     color: crimson;
     position: absolute;
-    left: 400px;
+    left: 300px;
     padding-left: 5px;
     background: transparent;
 }
@@ -33,15 +33,17 @@
     left: 0px;
 }
 .link a {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: -2px -2px -2px -2px;
+    max-width: border-box;
+    height: 1rem;
+    font-weight: bold;
+    font-size: 12px;
     text-decoration: none;
-    color: #1A1A1A;
+    color: darkcyan;
 }
 .link a:hover {
     color: snow;
 }
 .link a:active {
-    color: snow;
-    font-weight: bold;
+    color: forestgreen;
 }
