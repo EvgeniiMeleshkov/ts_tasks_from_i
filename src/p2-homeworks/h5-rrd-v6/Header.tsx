@@ -9,9 +9,9 @@ function Header() {
         <div className={s.slide}>
             <div className={s.toggle}>▶︎</div>
             <div className={s.box}>
-                <SuperButton className={s.link}><NavLink to={PATH.PRE_JUNIOR}>Pre Junior </NavLink></SuperButton>
-                <SuperButton className={s.link}><NavLink to={PATH.JUNIOR}>Junior </NavLink></SuperButton>
-                <SuperButton className={s.link}><NavLink to={PATH.JUNIOR_PLUS}>Junior Plus</NavLink></SuperButton>
+                <div className={s.link}><NavLink to={PATH.PRE_JUNIOR}>Pre Junior </NavLink></div>
+                <div className={s.link}><NavLink to={PATH.JUNIOR}>Junior </NavLink></div>
+                <div className={s.link}><NavLink to={PATH.JUNIOR_PLUS}>Junior Plus</NavLink></div>
             </div>
 
         </div>

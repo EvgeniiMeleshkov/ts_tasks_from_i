@@ -1,11 +1,11 @@
 .slide{
-    box-shadow:-2px 2px 7px black;
+    box-shadow:-2px 2px 5px darkslategrey;
     border-radius: 10px;
     position: relative;
-    background: rgba(85,190,242,0.5);
+    background: rgba(158, 202, 241, 0.5);
     width: 300px;
     left: -300px;
-    height: 30px;
+    height: 20px;
     transition: left 0.5s ease-in-out;
     -o-transition: left 0.5s ease-in-out;
     -ms-transition: left 0.5s ease-in-out;
@@ -13,7 +13,7 @@
     -webkit-transition: left 0.5s ease-in-out;
 }
 .toggle{
-    font-size: 30px;
+    font-size: 20px;
     color: crimson;
     position: absolute;
     left: 300px;
@@ -25,7 +25,6 @@
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr  ;
-    gap: 10px 10px;
     grid-template-areas:
     ". . .";
 }
@@ -33,13 +32,12 @@
     left: 0px;
 }
 .link a {
-    padding: -2px -2px -2px -2px;
+    margin-top: 5px;
     max-width: border-box;
-    height: 1rem;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     text-decoration: none;
-    color: darkcyan;
+    color: #002d5b;
 }
 .link a:hover {
     color: snow;
