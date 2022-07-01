@@ -1,0 +1,15 @@
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.spanDiv {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.imgGif {
+    margin-right: 0.5rem;
+    height: 45px;
+    transform: rotate(75deg);
+}
