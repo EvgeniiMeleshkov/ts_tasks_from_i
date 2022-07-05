@@ -2,7 +2,6 @@ import React from 'react'
 import {NavLink} from 'react-router-dom';
 import {PATH} from './Pages';
 import s from './Header.module.css'
-import SuperButton from '../h4/common/c2-SuperButton/SuperButton';
 
 function Header() {
     return (
