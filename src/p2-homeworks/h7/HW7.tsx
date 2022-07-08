@@ -11,24 +11,37 @@ function HW7() {
         <div>
             <hr/>
             homeworks 7
+            <div style={{
+                display: 'grid',
+                justifyContent: 'center',
+                justifyItems: 'center'
+            }}>
 
-            {/*should work (должно работать)*/}
-            <div>
-                <SuperSelect
-                    options={arr}
-                    value={value}
-                    onChangeOption={onChangeOption}
-                />
-            </div>
-            <div>
-                <SuperRadio
-                    name={'radio'}
-                    options={arr}
-                    value={value}
-                    onChangeOption={onChangeOption}
-                />
-            </div>
 
+            <div style={{display: 'grid',
+                justifyItems: 'end',
+                color: 'darkblue',
+
+            }}>
+
+                {/*should work (должно работать)*/}
+                <div>
+                    <SuperSelect
+                        options={arr}
+                        value={value}
+                        onChangeOption={onChangeOption}
+                    />
+                </div>
+                <div>
+                    <SuperRadio
+                        name={'radio'}
+                        options={arr}
+                        value={value}
+                        onChangeOption={onChangeOption}
+                    />
+                </div>
+            </div>
+            </div>
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperSelect/>*/}
