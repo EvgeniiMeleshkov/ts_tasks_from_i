@@ -5,6 +5,7 @@ import s from './Affairs.module.css'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton';
 
 type AffairsPropsType = { // need to fix any
+    filter: FilterType
     data: Array<AffairType>
     setFilter: React.Dispatch<React.SetStateAction<FilterType>>
     deleteAffairCallback: (_id: number) => void
@@ -38,10 +39,10 @@ function Affairs(props: AffairsPropsType) {
                 {mappedAffairs}
             </div>
             <div className={s.buttonsDiv}>
-                <SuperButton onClick={setAll}>All</SuperButton>
-                <SuperButton onClick={setHigh}>High</SuperButton>
-                <SuperButton onClick={setMiddle}>Middle</SuperButton>
-                <SuperButton onClick={setLow}>Low</SuperButton>
+                <SuperButton style={props.filter === 'all' ? {backgroundColor: 'forestgreen'} : {}} onClick={setAll}>All</SuperButton>
+                <SuperButton style={props.filter === 'high' ? {backgroundColor: 'crimson'} : {}} onClick={setHigh}>High</SuperButton>
+                <SuperButton style={props.filter === 'middle' ? {backgroundColor: 'darkgoldenrod'} : {}} onClick={setMiddle}>Middle</SuperButton>
+                <SuperButton style={props.filter === 'low' ? {backgroundColor: 'rgba(3, 59, 105, 0.64)'} : {}} onClick={setLow}>Low</SuperButton>
             </div>
         </div>
     )
