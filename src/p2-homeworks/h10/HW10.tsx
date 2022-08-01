@@ -15,7 +15,7 @@ function HW10() {
         dispatch(loadingAC(true))
         setTimeout(() => {
             dispatch(loadingAC(false))
-        }, 2000)
+        }, 3000)
         console.log('loading...')
     };
 
