@@ -3,7 +3,6 @@ import { combineReducers, createStore } from 'redux'
 
 const reducers = combineReducers({
     loading: loadingReducer,
-
 })
 
 const store = createStore(reducers)

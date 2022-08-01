@@ -1,5 +1,5 @@
 
-type InitialStateType = {
+export type InitialStateType = {
     isLoading: boolean
 }
 
