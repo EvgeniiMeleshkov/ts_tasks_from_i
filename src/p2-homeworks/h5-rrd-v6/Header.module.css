@@ -1,8 +1,8 @@
 .slide{
     box-shadow:-2px 2px 5px darkslategrey;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
     position: relative;
-    background: rgba(158, 202, 241, 0.5);
+    background: #5D6C5A7C;
     width: 300px;
     left: -300px;
     height: 20px;
@@ -14,7 +14,8 @@
 }
 .toggle{
     font-size: 20px;
-    color: crimson;
+    color: #5D6C5A7C;
+    text-shadow: -3px 0 4px #5D6C5A7C;
     position: absolute;
     left: 300px;
     padding-left: 5px;
