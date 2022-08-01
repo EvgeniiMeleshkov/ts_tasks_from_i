@@ -28,7 +28,7 @@ function Clock() {
     const stringDate = 'Date' // fix with date
 
     return (
-        <div>
+        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
             <div
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
@@ -41,10 +41,10 @@ function Clock() {
                     {stringDate}
                 </div>
             )}
-
-            <SuperButton onClick={start}>start</SuperButton>
-            <SuperButton onClick={stop}>stop</SuperButton>
-
+            <div style={{display: 'flex', flexDirection: 'row'}}>
+                <SuperButton onClick={start}>start</SuperButton>
+                <SuperButton onClick={stop}>stop</SuperButton>
+            </div>
         </div>
     )
 }

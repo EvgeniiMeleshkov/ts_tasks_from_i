@@ -42,8 +42,8 @@ function HW8() {
     const check = () => setPeople(homeWorkReducer(initialPeople, {type: 'check', payload: 18}))
 
     return (
-        <div style={{display: 'flex', flexDirection: 'column', }}>
-            <hr/>
+        <div>
+
             homeworks 8
             {/*should work (должно работать)*/}
             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
@@ -59,7 +59,7 @@ function HW8() {
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativePeople/>*/}
-            <hr/>
+
         </div>
     )
 }
