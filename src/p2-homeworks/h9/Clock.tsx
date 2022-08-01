@@ -32,7 +32,11 @@ function Clock() {
             <div style={{height: '50px',display: 'flex',
                 flexDirection: 'column-reverse',
                 justifyContent: 'space-between',
-                alignItems: 'center'}}>
+                alignItems: 'center',
+                fontWeight: 'bold',
+                color: '#002B4A',
+                textShadow: '1px 1px 1px #86B3FF'
+            }}>
                 <div
                     onMouseEnter={onMouseEnter}
                     onMouseLeave={onMouseLeave}
