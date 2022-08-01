@@ -13,24 +13,23 @@ function HW10() {
 
     return (
         <div>
-            <hr/>
             homeworks 10
 
             {/*should work (должно работать)*/}
-            {loading
-                ? (
-                    <div>крутилка...</div>
-                ) : (
-                    <div>
-                        <SuperButton onClick={setLoading}>set loading...</SuperButton>
-                    </div>
-                )
-            }
-
+            <div style={{display: 'flex', justifyContent: 'center'}}>
+                {loading
+                    ? (
+                        <div>крутилка...</div>
+                    ) : (
+                        <div>
+                            <SuperButton onClick={setLoading}>set loading...</SuperButton>
+                        </div>
+                    )
+                }
+            </div>
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<Alternative/>*/}
-            <hr/>
         </div>
     )
 }

@@ -29,7 +29,9 @@ function HW8() {
                  minWidth: '300px',
                  display: 'flex',
                  flexDirection: 'row',
-                 justifyContent: 'space-between'
+                 justifyContent: 'space-between',
+                 color: '#002B4A',
+                 textShadow: '1px 1px 1px #86B3FF'
              }}>
 
             <div style={{textAlign: 'start'}}>{p.name}</div>
@@ -47,7 +49,8 @@ function HW8() {
             homeworks 8
             {/*should work (должно работать)*/}
             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                <div style={{padding: '0.5rem', border: 'solid 1px #1A1A1A', borderRadius: '10px'}}>
+                <div style={{padding: '0.5rem', border: 'solid 1px #1A1A1A',
+                    borderRadius: '10px',backgroundColor: 'rgba(93,108,90,0.15)'}}>
                     {finalPeople}
                 </div>
             <div style={{display: 'flex', flexDirection: 'row'}}>
