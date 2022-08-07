@@ -19,7 +19,6 @@ function HW10() {
         console.log('loading...')
     };
 
-
     return (
         <div>
             homeworks 10

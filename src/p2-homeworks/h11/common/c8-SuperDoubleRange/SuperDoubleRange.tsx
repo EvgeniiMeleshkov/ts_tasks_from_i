@@ -1,4 +1,5 @@
 import React from 'react'
+import RangeSlider from './MuiSlider';
 
 type SuperDoubleRangePropsType = {
     onChangeRange?: (value: [number, number]) => void
@@ -14,9 +15,12 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
 ) => {
     // сделать самому, можно подключать библиотеки
 
+
     return (
         <>
-            DoubleRange
+            <div>
+                <RangeSlider value={value!} setValue={onChangeRange!} />
+            </div>
         </>
     )
 }
