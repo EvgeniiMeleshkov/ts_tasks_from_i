@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import SuperRange from './common/c7-SuperRange/SuperRange'
 import SuperDoubleRange from './common/c8-SuperDoubleRange/SuperDoubleRange'
+import oblivionLogo from '../../assets/ob3041tc0c-oblivion-logo-the-elder-scrolls-iv-oblivion-logopedia-.png'
+import s from './HW11.module.css'
 
 function HW11() {
     const onTopSliderChanged = (value: number) => {
@@ -20,38 +22,40 @@ function HW11() {
             homeworks 11
 
             {/*should work (должно работать)*/}
-            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                <div style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'flex-start'}}>
+                <div className={s.main}>
+                    <div className={s.divForSliders}>
 
-                    <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-                        <span>{doubleVal[0]}</span>
-                        <div style={{margin: '0 1rem 0 1rem'}}>
-                            <SuperRange value={doubleVal[0]}
-                                        onChangeRange={onTopSliderChanged}/>
+                        <div className={s.sliderDiv}>
+                            <span className={s.digits}>{doubleVal[0]}</span>
+                            <div>
+                                <SuperRange value={doubleVal[0]}
+                                            onChangeRange={onTopSliderChanged}/>
+                            </div>
+
                         </div>
 
-                    </div>
-
-                    <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-                        <span>{doubleVal[0]}</span>
-                        <div style={{margin: '0 1rem 0 1rem'}}>
-                            <SuperDoubleRange value={doubleVal} onChangeRange={setDoubleValue}/>
+                        <div className={s.sliderDiv}>
+                            <span className={s.digits}>{doubleVal[0]}</span>
+                            <div>
+                                <SuperDoubleRange value={doubleVal} onChangeRange={setDoubleValue}/>
+                            </div>
+                            <span className={s.digits}>{doubleVal[1]}</span>
                         </div>
-                        <span>{doubleVal[1]}</span>
                     </div>
+                    <img alt='The Elder Scrolls' src={oblivionLogo} style={{height: '50px'}}/>
+
                 </div>
 
-            </div>
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperRange/>*/}
-            {/*<AlternativeSuperDoubleRange/>*/}
-            <hr/>
+                <hr/>
+                {/*для личного творчества, могу проверить*/}
+                {/*<AlternativeSuperRange/>*/}
+                {/*<AlternativeSuperDoubleRange/>*/}
+                <hr/>
         </div>
-    )
+
+
+
+)
 }
 
 export default HW11
