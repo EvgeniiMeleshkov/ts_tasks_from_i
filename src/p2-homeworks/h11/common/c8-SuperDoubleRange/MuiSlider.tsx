@@ -15,7 +15,6 @@ type PropsType = {
 }
 
 export default function MinimumDistanceSlider({value , setValue}: PropsType) {
-    //const [value1, setValue1] = React.useState<number[]>([20, 37]);
 
     const handleChange1 = (
         event: Event,

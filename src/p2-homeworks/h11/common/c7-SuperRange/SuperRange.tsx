@@ -48,13 +48,6 @@ const SuperRange: React.FC<SuperRangePropsType> = (
                 <Slider value={value} onChange={handleChange1} aria-label="Default" valueLabelDisplay="auto" />
             </Box>
 
-            {/*<input*/}
-            {/*    type={'range'}*/}
-            {/*    onChange={onChangeCallback}*/}
-            {/*    className={finalRangeClassName}*/}
-
-            {/*    {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)*/}
-            {/*/>*/}
         </>
     )
 }
