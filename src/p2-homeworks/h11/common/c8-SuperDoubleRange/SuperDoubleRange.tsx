@@ -1,9 +1,10 @@
 import React from 'react'
 import RangeSlider from './MuiSlider';
+import MinimumDistanceSlider from './MuiSlider';
 
 type SuperDoubleRangePropsType = {
-    onChangeRange?: (value: [number, number]) => void
-    value?: [number, number]
+    onChangeRange: (value: [number, number]) => void
+    value: [number, number]
     // min, max, step, disable, ...
 }
 
@@ -16,10 +17,11 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     // сделать самому, можно подключать библиотеки
 
 
+
     return (
         <>
             <div>
-                <RangeSlider value={value!} setValue={onChangeRange!} />
+                <MinimumDistanceSlider value={value} setValue={onChangeRange} />
             </div>
         </>
     )
