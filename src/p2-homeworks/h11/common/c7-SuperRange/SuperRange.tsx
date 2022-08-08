@@ -1,5 +1,6 @@
-import React, { DetailedHTMLProps, InputHTMLAttributes} from 'react'
+import React, {DetailedHTMLProps, InputHTMLAttributes} from 'react'
 import {Box, Slider} from '@mui/material';
+import {oblivionLoadingStyle} from '../OblivionLoadingStyle';
 
 // тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
@@ -42,13 +43,10 @@ const SuperRange: React.FC<SuperRangePropsType> = (
     };
 
     return (
-        <>
-            <Box width={300}>
-
-                <Slider value={value} onChange={handleChange1} aria-label="Default" valueLabelDisplay="auto" />
-            </Box>
-
-        </>
+        <div>
+            <Slider sx={oblivionLoadingStyle} value={value} onChange={handleChange1} aria-label="Default"
+                    valueLabelDisplay="auto"/>
+        </div>
     )
 }
 

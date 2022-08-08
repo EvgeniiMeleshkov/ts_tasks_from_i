@@ -20,22 +20,30 @@ function HW11() {
             homeworks 11
 
             {/*should work (должно работать)*/}
-            <div style={{display: 'flex',flexDirection: 'column', alignItems: 'center'}}>
-                <div>
-                    <span>{doubleVal[0]}</span>
-                    <SuperRange value={doubleVal[0]}
-                                onChangeRange={onTopSliderChanged}
+            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                <div style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'flex-start'}}>
 
-                    />
+                    <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+                        <span>{doubleVal[0]}</span>
+                        <div style={{margin: '0 1rem 0 1rem'}}>
+                            <SuperRange value={doubleVal[0]}
+                                        onChangeRange={onTopSliderChanged}/>
+                        </div>
+
+                    </div>
+
+                    <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+                        <span>{doubleVal[0]}</span>
+                        <div style={{margin: '0 1rem 0 1rem'}}>
+                            <SuperDoubleRange value={doubleVal} onChangeRange={setDoubleValue}/>
+                        </div>
+                        <span>{doubleVal[1]}</span>
+                    </div>
                 </div>
 
-                <div>
-                    <span>{doubleVal[0]}</span>
-                    <SuperDoubleRange value={doubleVal} onChangeRange={setDoubleValue}
-
-                    />
-                    <span>{doubleVal[1]}</span>
-                </div>
             </div>
             <hr/>
             {/*для личного творчества, могу проверить*/}

@@ -1,6 +1,8 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
+import '../OblivionLoadingStyle'
+import {oblivionLoadingStyle} from '../OblivionLoadingStyle';
 
 function valuetext(value: number) {
     return `${value}`;
@@ -33,8 +35,9 @@ export default function MinimumDistanceSlider({value , setValue}: PropsType) {
     };
 
     return (
-        <Box sx={{ width: 300 }}>
+        <div>
             <Slider
+                sx={oblivionLoadingStyle}
                 getAriaLabel={() => 'Minimum distance'}
                 value={value}
                 onChange={handleChange1}
@@ -42,6 +45,6 @@ export default function MinimumDistanceSlider({value , setValue}: PropsType) {
                 getAriaValueText={valuetext}
                 disableSwap
             />
-        </Box>
+        </div>
     );
 }
