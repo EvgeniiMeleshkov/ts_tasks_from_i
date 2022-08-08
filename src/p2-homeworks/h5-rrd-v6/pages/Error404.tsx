@@ -11,8 +11,8 @@ function Error404() {
                 <div>Page not found! 🙂</div>
             </div>
             <span>
-                <img className={s.leo} src={leo}/>
-                <img className={s.keanu} src={Keanu}/>
+                <img alt={''} className={s.leo} src={leo}/>
+                <img alt={''} className={s.keanu} src={Keanu}/>
             </span>
         </div>
     )

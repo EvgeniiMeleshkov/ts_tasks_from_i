@@ -22,7 +22,7 @@ function HW6() {
             {/*should work (должно работать)*/}
             <div className={s.mainDiv}>
                 <div className={s.spanDiv}>
-                    <img className={s.imgGif} src={click}/>
+                    <img alt={''} className={s.imgGif} src={click}/>
                     <SuperEditableSpan
                         error={error}
                         value={value}

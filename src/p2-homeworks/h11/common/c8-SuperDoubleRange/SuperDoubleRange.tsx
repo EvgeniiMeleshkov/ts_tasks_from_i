@@ -1,5 +1,4 @@
 import React from 'react'
-import RangeSlider from './MuiSlider';
 import MinimumDistanceSlider from './MuiSlider';
 
 type SuperDoubleRangePropsType = {

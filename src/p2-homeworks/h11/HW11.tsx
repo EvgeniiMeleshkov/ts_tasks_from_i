@@ -11,10 +11,8 @@ function HW11() {
             setValue1(value)
             setDoubleVal([value, value2])
         }
-        //setValue1(value1)
-        //setDoubleVal([value, value2])
+
     }
-    //const doubleVal = [value1, value2] as [number, number]
 
     const setDoubleValue = (value: [number, number]) => {
         if (value1 >= value2) {
@@ -37,14 +35,14 @@ function HW11() {
                     <span>{value1}</span>
                     <SuperRange value={value1}
                                 onChangeRange={onTopSliderChanged}
-                        // сделать так чтоб value1 изменялось
+
                     />
                 </div>
 
                 <div>
                     <span>{value1}</span>
                     <SuperDoubleRange value={doubleVal} onChangeRange={setDoubleValue}
-                        // сделать так чтоб value1 и value2 изменялось
+
                     />
                     <span>{value2}</span>
                 </div>

@@ -14,7 +14,7 @@ const Message = ({avatar, name, message, time}: MessageDataType) => {
         <div >
             <div className={styles.messageInstance}>
                 <div>
-                    <img className={styles.img} src={avatar}/>
+                    <img alt={''} className={styles.img} src={avatar}/>
                 </div>
                 <div>
                     <div className={styles.messageText}>

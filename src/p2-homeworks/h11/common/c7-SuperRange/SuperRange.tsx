@@ -1,6 +1,5 @@
-import React, {ChangeEvent, DetailedHTMLProps, InputHTMLAttributes} from 'react'
-import s from './SuperRange.module.css'
-import {Box, Input, Slider} from '@mui/material';
+import React, { DetailedHTMLProps, InputHTMLAttributes} from 'react'
+import {Box, Slider} from '@mui/material';
 
 // тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
@@ -19,7 +18,7 @@ const SuperRange: React.FC<SuperRangePropsType> = (
         onChangeRange,
         // className,
         value,
-        ...restProps// все остальные пропсы попадут в объект restProps
+        //...restProps// все остальные пропсы попадут в объект restProps
     }
 ) => {
 
