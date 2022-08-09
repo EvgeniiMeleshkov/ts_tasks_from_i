@@ -14,13 +14,21 @@ export const oblivionLoadingStyle = {
         boxShadow: 'rgba(9, 29, 59, 0.47) 3px 1px 3px'
     },
     '& .MuiSlider-thumb': {
-        shadows: 'none',
+        boxShadow: 'none',
         height: '13px',
         borderRadius: '0',
         width: '7px',
         opacity: '100%',
         color: 'gold',
         border: 'solid gray 1px',
-        onfocus: 'none'
+    },
+    '& .MuiSlider-thumb: hover': {
+        boxShadow: 'none',
+    },
+    '& .MuiSlider-thumb: focused': {
+        boxShadow: 'none',
+    },
+    '& .MuiSlider-thumb: active': {
+        boxShadow: 'none',
     }
 }
