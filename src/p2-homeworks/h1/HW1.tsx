@@ -5,6 +5,7 @@ import SuperButton from '../h4/common/c2-SuperButton/SuperButton';
 import SuperInputText from '../h4/common/c1-SuperInputText/SuperInputText';
 
 const HW1 = () => {
+
 //-------------------------------------------------------------------------------------
     const [arr, setArr] = useState<MessageDataType[]>([{
                 avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
