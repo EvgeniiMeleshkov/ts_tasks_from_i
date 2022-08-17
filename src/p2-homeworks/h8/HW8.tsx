@@ -1,6 +1,9 @@
 import React, {useState} from 'react'
 import {homeWorkReducer} from './bll/homeWorkReducer'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import s from '../h12/HW12.module.css'
+import {useSelector} from 'react-redux';
+import {AppStoreType} from '../h10/bll/store';
 
 export type UserType = {
     _id: number
@@ -20,6 +23,7 @@ const initialPeople = [
 function HW8() {
     const [people, setPeople] = useState<UserType[]>(initialPeople) // need to fix any
 
+    const theme = useSelector<AppStoreType, string>(state => state.theme.theme)
 
     const finalPeople = people.map((p: UserType) => (
         <div key={p._id}
@@ -30,9 +34,9 @@ function HW8() {
                  display: 'flex',
                  flexDirection: 'row',
                  justifyContent: 'space-between',
-                 color: '#002B4A',
-                 textShadow: '1px 1px 1px #86B3FF'
-             }}>
+                 textShadow: '1px 1px 1px #86B3FF',
+                 backgroundColor: 'transparent'
+             }} className={s[theme]}>
 
             <div style={{textAlign: 'start'}}>{p.name}</div>
             <div style={{textAlign: 'end'}}>{p.age}</div>
@@ -50,7 +54,7 @@ function HW8() {
             {/*should work (должно работать)*/}
             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                 <div style={{padding: '0.5rem', border: 'solid 1px #1A1A1A',
-                    borderRadius: '10px',backgroundColor: 'rgba(93,108,90,0.15)'}}>
+                    borderRadius: '10px',backgroundColor: 'transparent'}}>
                     {finalPeople}
                 </div>
             <div style={{display: 'flex', flexDirection: 'row'}}>

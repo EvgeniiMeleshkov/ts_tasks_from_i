@@ -1,23 +1,27 @@
 .dark {
     background: rgba(36, 42, 45, 0.76);
-}
-
-.dark-text {
     color: aliceblue;
 }
 
+/*.dark-text {*/
+/*    color: aliceblue;*/
+/*}*/
+
 .default {
     background: rgba(47,116,151,0.08);
+    color: #001936;
+
 }
 
-.red-text {
-    color: aqua;
-}
+/*.red-text {*/
+/*    color: aqua;*/
+/*}*/
 
 .sandy {
     background: rgb(217 195 110 / 43%);
+    color: #0f2d52;
 }
 
-.light-green-text {
-    color: darkslateblue;
-}
+/*.light-green-text {*/
+/*    color: darkslateblue;*/
+/*}*/
