@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ts_tasks_from_i/static/css/main.6a84cc4c.css",
-    "main.js": "/ts_tasks_from_i/static/js/main.1c02c222.js",
+    "main.css": "/ts_tasks_from_i/static/css/main.1da5fc1a.css",
+    "main.js": "/ts_tasks_from_i/static/js/main.94b13c34.js",
     "static/media/leo.png": "/ts_tasks_from_i/static/media/leo.ca69e98e0643482098cd.png",
     "static/media/ob3041tc0c-oblivion-logo-the-elder-scrolls-iv-oblivion-logopedia-.png": "/ts_tasks_from_i/static/media/ob3041tc0c-oblivion-logo-the-elder-scrolls-iv-oblivion-logopedia-.b2ee1b1497fc835863f0.png",
     "static/media/Keanu.png": "/ts_tasks_from_i/static/media/Keanu.3e64aa269c08ea868ee6.png",
     "static/media/1479.gif": "/ts_tasks_from_i/static/media/1479.c5455a94a7d474ab22f6.gif",
     "index.html": "/ts_tasks_from_i/index.html",
-    "main.6a84cc4c.css.map": "/ts_tasks_from_i/static/css/main.6a84cc4c.css.map",
-    "main.1c02c222.js.map": "/ts_tasks_from_i/static/js/main.1c02c222.js.map"
+    "main.1da5fc1a.css.map": "/ts_tasks_from_i/static/css/main.1da5fc1a.css.map",
+    "main.94b13c34.js.map": "/ts_tasks_from_i/static/js/main.94b13c34.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a84cc4c.css",
-    "static/js/main.1c02c222.js"
+    "static/css/main.1da5fc1a.css",
+    "static/js/main.94b13c34.js"
   ]
 }
