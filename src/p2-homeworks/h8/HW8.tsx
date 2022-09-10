@@ -12,12 +12,12 @@ export type UserType = {
 }
 
 const initialPeople = [
-    {_id: 0, name: 'Кот', age: 3},
-    {_id: 1, name: 'Александр', age: 66},
-    {_id: 2, name: 'Коля', age: 16},
-    {_id: 3, name: 'Виктор', age: 44},
-    {_id: 4, name: 'Дмитрий', age: 40},
-    {_id: 5, name: 'Ирина', age: 55},
+    {_id: 0, name: 'Cat', age: 3},
+    {_id: 1, name: 'Alex', age: 66},
+    {_id: 2, name: 'Collin', age: 16},
+    {_id: 3, name: 'Victor', age: 44},
+    {_id: 4, name: 'Damian', age: 40},
+    {_id: 5, name: 'Iren', age: 55},
 ]
 
 function HW8() {
