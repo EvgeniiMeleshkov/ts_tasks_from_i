@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import '../OblivionLoadingStyle'
 import {oblivionLoadingStyle} from '../OblivionLoadingStyle';
